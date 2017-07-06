@@ -136,8 +136,8 @@ sed -i "s|cfg\['blowfish_secret'\] = ''|cfg\['blowfish_secret'\] = '${BLOWFISH_S
 echo -e "\t-configure server."
 
 # Document Root
-rm -rf /var/www/html
-ln -fs /vagrant/public /var/www/html
+#rm -rf /var/www/html
+#ln -fs /vagrant/public /var/www/html
 
 # Mod Rewrite
 a2enmod rewrite >> $LOG_FILE 2>&1
