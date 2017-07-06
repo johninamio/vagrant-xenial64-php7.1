@@ -96,7 +96,7 @@ service mysql restart >> $LOG_FILE 2>&1
 #/usr/bin/mysqladmin -u root password "${DATABASE_ROOT_PASS}"
 
 # allow remote access (required to access from our private network host. Note that this is completely insecure if used in any other way)
-mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '${DATABASE_ROOT_PASS}' WITH GRANT OPTION; FLUSH PRIVILEGES; QUIT;"
+mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '${DATABASE_ROOT_PASS}' WITH GRANT OPTION; FLUSH PRIVILEGES;"
 
 ##
 # PHP 7.1
