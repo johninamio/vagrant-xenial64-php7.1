@@ -1,0 +1,6 @@
+# IntelliJ IDEA Files
+.idea/
+*.iml
+
+# Vagrant Files
+.vagrant
