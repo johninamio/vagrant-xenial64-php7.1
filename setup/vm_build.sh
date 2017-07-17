@@ -37,6 +37,12 @@ apt-get install -y software-properties-common python-software-properties >> $LOG
 echo -e "\t\t--language pack"
 apt-get install -y language-pack-en-base >> $LOG_FILE 2>&1
 
+echo -e "\t\t--midnight commander"
+apt-get install mc gpm
+
+echo -e "\t\t--htop"
+apt-get install htop
+
 echo -e "\t\t--7zip"
 apt-get install -y p7zip p7zip-full p7zip-rar >> $LOG_FILE 2>&1
 
